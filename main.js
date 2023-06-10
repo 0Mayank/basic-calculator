@@ -17,7 +17,7 @@ app.addEventListener("click", function(event) {
       prev_op = op;
     } else if (prev_op === "+") {
       result += num;
-    } else if (prev_op === "-") {
+    } else if (prev_op === "—") {
       result -= num;
     } else if (prev_op === "÷") {
       result /= num;

@@ -51,6 +51,8 @@ body {
 }
 
 .calculator > .screen {
+  font-size: 35px;
+  overflow: hidden;
   display: flex;
   font-family: "Roboto";
   color: white;
@@ -108,14 +110,17 @@ body {
 }
 
 
-@media only screen and (min-width: 450px) and (min-height: 675px){
+@media only screen and (min-width: 460px) and (min-height: 675px){
   .calculator * {
     font-size: 45px;
   }
 
+  .calculator > .screen {
+    font-size: 35px;
+  }
+
   .calculator {
     width: 450px;
-
   }
 
   .text-below {
@@ -129,13 +134,17 @@ body {
   }
 }
 
-@media only screen and (min-width: 450px) and (max-height: 675px) {
+@media only screen and (min-width: 460px) and (max-height: 675px) {
   .calculator {
     width: 66vh;
   }
 
   .calculator * {
     font-size: 6.6vh;
+  }
+  
+  .calculator > .screen {
+    font-size: 6vh;
   }
 
   body {
@@ -151,7 +160,7 @@ body {
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 460px) and (min-height: 675px) {
   .calculator {
     width: 100%;
   }
@@ -171,4 +180,24 @@ body {
   }
 }
 
+@media only screen and (max-witdh: 460px) and (max-height: 675px) {
+  .calculator {
+    width: 100%;
+  }
+
+  .calculator * {
+    font-size: 10vw;
+  }
+
+  .text-below {
+    font-size: 11vw;
+  }
+
+  body {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    background-color: red;
+  }
+}
 
